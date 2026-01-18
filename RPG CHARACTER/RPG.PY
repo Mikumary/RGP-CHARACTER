@@ -33,7 +33,7 @@ def create_character(character_name,strength,intelligence,charisma):
             return "The character should start with 7 points"
     
     def stat_line(label,value):
-        return f"{label} {full_dot * value} {empty_dot * (10-value)}"
+        return f"{label} {full_dot * value}{empty_dot * (10-value)}"
     
     return (
         f"{character_name}\n"
