@@ -1,0 +1,38 @@
+# squares = []
+# for x in range (5):
+#     squares.append(x**2)
+# print(squares)
+
+square = [x**2 for x in range (5)]
+
+
+nums=[1,2,3,4,5,6]
+new_num=[]
+# for num in nums:
+#     if num % 2==0:
+#        new_num.append(num**2)
+# print (new_num)
+
+new_num=[num**2 for num in nums if num %2==0]
+print (new_num)
+
+words = ['tree','sky','mountain','river','cloud','sun']
+
+env,*nature=words
+print(env)
+print(nature)
+
+def is_long_word(word):
+    return len(word)< 4
+
+long_words=list(filter(is_long_word,words))
+
+print(long_words)
+
+celsius=[0,10,20,30,40]
+
+def to_fahrenheit(temp):
+    return (temp * 9/5) + 32
+
+fenherit=list(map(to_fahrenheit,celsius))
+print(fenherit)
